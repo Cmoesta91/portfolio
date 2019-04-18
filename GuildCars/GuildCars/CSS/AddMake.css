@@ -1,0 +1,11 @@
+﻿#makeBox {
+    border-style: solid;
+    height: 150px;
+    width: auto;
+}
+
+#makeSubmit {
+    position: relative;
+    top: 19px;
+    left: 12px;
+}

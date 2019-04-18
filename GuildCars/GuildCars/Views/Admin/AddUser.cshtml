@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "AddUser";
+}
+
+
+<link rel="stylesheet" type="text/css" href="~/CSS/AddUser.css" media="screen" />
+
+<div class="row">
+    <h2>Add User</h2>
+    <div class="form-group" id="FName">
+        <label>First Name </label>
+        <br />
+        <input type="text" name="FName" />
+    </div>
+
+    <div class="form-group" id="LName">
+        <label>Last Name </label>
+        <br />
+        <input type="text" name="LName" />
+    </div>
+    <br />
+    <div class="form-group" id="Email">
+        <label>Email</label>
+        <br />
+        <input type="email" name="email" />
+    </div>
+    
+    <div class="form-group" id="Role">
+        <label>Role </label>
+        <br />
+        <select>
+            <option>Disabled</option>
+            <option>Admin</option>
+            <option>Sales</option>
+        </select>
+    </div>
+    <br />
+    <div class="form-group" id="Password">
+        <label>Password</label>
+        <br />
+        <input type="password" name="password" />
+    </div>
+
+    <div class="form-group" id="ConfirmPassword">
+        <label>Confirm Password</label>
+        <br />
+        <input type="password" name="ConfirmPassword" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+</div>

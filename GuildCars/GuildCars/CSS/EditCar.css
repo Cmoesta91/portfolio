@@ -1,0 +1,53 @@
+﻿#carMake {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carModel {
+    display: inline-block;
+}
+
+#carType {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carBodyStyle {
+    display: inline-block;
+}
+
+#carYear {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carTrans {
+    display: inline-block;
+}
+
+#carColor {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carInterior {
+    display: inline-block;
+}
+
+#carMilege {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carVin {
+    display: inline-block;
+}
+
+#carMSRP {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#carPrice {
+    display: inline-block;
+}

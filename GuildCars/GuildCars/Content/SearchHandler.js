@@ -1,0 +1,6 @@
+﻿
+$.ajax;{
+
+    $('#resultTable').append(newCar)
+
+}

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/Users.css" media="screen" />
+
+<h2>Users</h2>
+<p>@Html.ActionLink("Add a new User", "AddUser", "Admin", null, new { @class = "btn btn-primary" })</p>
+<img src="~/Images/coffeeStickMan.png" />
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+   
+    </div>
+    <div class="col-xs-12 col-sm-9">
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>Users List</h4>
+                
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*@foreach (var user in Model)
+                        {*@
+                            <tr>
+                                <td>Hill</td>
+                                <td>Hank</td>
+                                <td>Hank.Hill@Propane.com</td>
+                                <td>Sales</td>
+                                <td>
+                                    @Html.ActionLink("edit", "EditUser", "Admin", null, null) 
+                                </td>
+
+                            </tr>
+                        @*}*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

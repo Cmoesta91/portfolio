@@ -1,0 +1,26 @@
+﻿@model Exercises.Models.ViewModels.StateVM
+
+@{
+    ViewBag.Title = "AddState";
+}
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h2>aDd StAtE</h2>
+        @Html.ActionLink("Return to List", "States", "Admin")
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+
+        @using (Html.BeginForm())
+        {
+        <div class="form-group">
+            @Html.DropDownListFor(m => m.State.StateAbbreviation, Model.ValidStates, "-Choose One-", new { @class = "form-control" })
+        </div>
+            <button type="submit" class="btn btn-sm btn-primary">Save</button>
+        }
+    </div>
+</div>

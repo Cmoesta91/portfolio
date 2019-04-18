@@ -1,0 +1,23 @@
+﻿#modelBox {
+    border-style: solid;
+    height: 200px;
+    width: auto;
+}
+
+#modelSubmit {
+    position: relative;
+    top: 19px;
+    left: 12px;
+}
+
+#makeBox {
+    display: inline-block;
+    margin-left: 24px;
+    
+
+}
+
+#saveBox {
+    display: inline-block;
+    margin-left: 24px;
+}

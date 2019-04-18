@@ -1,0 +1,22 @@
+﻿@model IEnumerable<GuildCars.Models.Models.Special>
+
+@{
+    ViewBag.Title = "Special";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/Special.css" media="screen" />
+
+<div class="row" id="">
+    <h2>Specials</h2>
+    @foreach (var special in Model)
+    {
+        <div id="Container">
+            <img src="~/Images/DollarSign.png" />
+            <span id="Name">@special.SpecialName</span>
+            <br />
+            <div id="Des">@special.SpecialDescription</div>
+        </div>
+        <br />
+        
+    }
+</div>

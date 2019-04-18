@@ -1,0 +1,85 @@
+﻿@model IEnumerable<GuildCars.Models.Models.Car>
+
+@{
+    ViewBag.Title = "UsedCars";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/Used.css" media="screen" />
+
+<h2>Used Vehicles</h2>
+
+<div id="searchBox">
+
+    <label id="searchLabel">Quick Search</label>
+    <div id="bars">
+        <input id="searchBar" type="search" placeholder="Enter make, model, or year" />
+
+        <div id="Price">
+            <label id="priceLabel">Price </label>
+
+            <input id="minPriceBar" type="number" placeholder="No Min" />
+
+            <input id="maxPriceBar" type="number" placeholder="No Max" />
+        </div>
+
+        <div id="Year">
+            <label id="yearLabel">Year</label>
+
+            <input id="minYearBar" type="number" placeholder="No Min" />
+
+            <input id="maxYearBar" type="number" placeholder="No Max" />
+        </div>
+        <div id="Search">
+            <input class="btn btn-primary" id="submitButton" type="submit" value="used" />
+        </div>
+
+    </div>
+</div>
+
+<br />
+<br />
+
+<div id="errorList"></div>
+
+<h2>Search Results</h2>
+<div class="row" id="searchResults">
+    @foreach (var car in Model)
+    {
+        <div id="carContainer">
+            <span id="carYear">@car.CarYear</span>
+
+            <span id="carMake">@car.Make.MakeName</span>
+
+            <span id="carModel">@car.Model.ModelName</span>
+
+            <img src="@car.PicturePath" alt="carImage" />
+            <div id="carDetails">
+                <span id="carBodyStyle"><span class="carText">Body Style:</span> @car.BodyStyle</span>
+                <br />
+                <span id="carTrans"><span class="carText">Trans:</span> @car.Trans</span>
+                <br />
+                <span id="carColor"><span class="carText">Color:</span> @car.Color</span>
+                <br />
+                <span id="carInterior"><span class="carText">Interior:</span> @car.Interior</span>
+                <br />
+                <span id="carMilege"><span class="carText">Mileage:</span> @car.Mileage</span>
+                <br />
+                <span id="carVin"><span class="carText">Vin #:</span> @car.Vin</span>
+                <br />
+                <span id="carPrice"><span class="carText">Sale Price:</span> @car.SalePrice</span>
+                <br />
+                <span id="carMSRP"><span class="carText">MSRP:</span> @car.MSRP</span>
+                <br />
+                <div id="">@Html.ActionLink("See Details!", "Details", "Inventory", new { id = car.CarID }, new { @class = "details" })</div>
+                <br />
+            </div>
+
+        </div>
+        <br />
+        <br />
+    }
+
+
+</div>
+
+<script src="~/JS/Home.js"></script>

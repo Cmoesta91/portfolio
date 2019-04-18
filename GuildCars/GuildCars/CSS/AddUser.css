@@ -1,0 +1,26 @@
+﻿#FName {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#LName {
+    display: inline-block;
+}
+
+#Email {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#Role {
+    display: inline-block;
+}
+
+#Password {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#ConfirmPassword {
+    display: inline-block;
+}

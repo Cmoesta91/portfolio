@@ -1,0 +1,121 @@
+﻿#Container {
+    width: auto;
+    height: 300px;
+    border-style: solid;
+}
+
+.carText {
+    font-weight: bold;
+}
+
+#carYear {
+    position: relative;
+    font-weight: bold;
+}
+
+#carMake {
+    position: relative;
+    font-weight: bold;
+}
+
+#carModel {
+    position: relative;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+}
+
+#carBodyStyle {
+    position: relative;
+    left: 251px;
+}
+
+#carTrans {
+    position: relative;
+    left: 286px;
+}
+
+#carColor {
+    position: relative;
+    left: 287px;
+}
+
+#carDescription {
+    position: relative;
+    left: 250px;
+    bottom: 100px;
+    padding-right: 275px;
+}
+
+#carInterior {
+    position: relative;
+    left: 502px;
+    bottom: 60px;
+}
+
+#carMilege {
+    position: relative;
+    left: 500px;
+    bottom: 60px;
+}
+
+#carVin {
+    position: relative;
+    left: 518px;
+    bottom: 60px;
+}
+
+#carPrice {
+    position: relative;
+    left: 775px;
+    bottom: 123px;
+}
+
+#carMSRP {
+    position: relative;
+    left: 801px;
+    bottom: 123px;
+}
+
+#FName {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#LName {
+    display: inline-block;
+}
+
+#StreetOne {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#StreetTwo {
+    display: inline-block;
+}
+
+#City {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#State {
+    display: inline-block;
+}
+
+#SalesInfo {
+    border-bottom: solid;
+    
+}
+
+#PurchasePrice {
+    display: inline-block;
+}
+
+#PurchaseType {
+    display: inline-block;
+    margin-right: 10px;
+}

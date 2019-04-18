@@ -1,0 +1,132 @@
+﻿@model GuildCars.ViewModels.VehicleVM
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/EditCar.css" media="screen" />
+
+<div class="row">
+    @using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { @class = "col-md-5" }))
+    {
+        @Html.ValidationSummary()
+        <div class="row">
+            <h2>Edit Vehicle</h2>
+            <div class="form-group" id="carMake">
+                @Html.HiddenFor(m => m.CarID)
+                <label>Make </label>
+                <br />
+                @Html.DropDownListFor(m => m.MakeID, Model.MakesDropDown, "Select Make", new { @class = "form-control", id = "makeDropDown", required = "required" })
+            </div>
+
+            <div class="form-group" id="carModel">
+                <label>Model </label>
+                @Html.DropDownListFor(m => m.ModelID, Model.ModelsDropDown, "Select Model", new { @class = "form-control", id = "modelDropDown", required = "required" })
+            </div>
+
+            <br />
+
+            <div class="form-group" id="carType">
+                <label>Type: </label>
+                <br />
+                @Html.DropDownListFor(m => m.CarType, new SelectList(new[] { "New", "Used" }), new { @class = "form-control", required = "required" })
+            </div>
+
+            <div class="form-group" id="carBodyStyle">
+                <label>Body Style: </label>
+                <br />
+                @Html.DropDownListFor(m => m.BodyStyle, new SelectList(new[] { "Car", "SUV", "Truck", "Van" }), new { @class = "form-control", required = "required" })
+            </div>
+
+            <br />
+
+            <div class="form-group" id="carYear">
+                <label>Year: </label>
+                <br />
+                @Html.TextBoxFor(m => m.CarYear, new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <div class="form-group" id="carTrans">
+                <label>Transmission: </label>
+                <br />
+                @Html.DropDownListFor(m => m.Trans, new SelectList(new[] { "Automatic", "manual" }), new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <br />
+
+            <div class="form-group" id="carColor">
+                <label>Color: </label>
+                <br />
+                @Html.DropDownListFor(m => m.Color, new SelectList(new[] { "Red", "Orange", "Yellow", "Green", "Blue", "Black", "White", "Grey", "Brown" }), new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <div class="form-group" id="carInterior">
+                <label>Interior: </label>
+                <br />
+                @Html.DropDownListFor(m => m.Interior, new SelectList(new[] { "Red", "Orange", "Yellow", "Green", "Blue", "Black", "White", "Grey", "Brown" }), new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <br />
+
+            <div class="form-group" id="carMilege">
+                <label>Mileage: </label>
+                <br />
+                @Html.TextBoxFor(m => m.Mileage, new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <div class="form-group" id="carVin">
+                <label>Vin #: </label>
+                <br />
+                @Html.TextBoxFor(m => m.Vin, new { @class = "form-control", required = "required" })
+
+            </div>
+
+            <br />
+
+            <div class="form-group" id="carMSRP">
+                <label>MSRP: </label>
+                <br />
+                @Html.TextBoxFor(m => m.MSRP, new { type = "number", min = "0", step = "0.01", required = "required" })
+
+            </div>
+
+            <div class="form-group" id="carPrice">
+                <label>Sale Price: </label>
+                <br />
+                @Html.TextBoxFor(m => m.SalePrice, new { type = "number", min = "0", step = "0.01", required = "required" })
+
+            </div>
+
+            <br />
+
+            <div class="form-group" id="Description">
+                <label>Description: </label>
+                <br />
+                @Html.TextAreaFor(m => m.CarDescription, new { @class = "form-control", required = "required" })
+
+
+                <div class="form-group" id="carPicture">
+                    <label>Picture: </label>
+                    <br />
+                    <input readonly type="file" name="Picture" />
+                </div>
+
+            </div>
+            <div>
+                @Html.CheckBoxFor(m => m.IsFeatured)
+                <label for="isFeatured">Feature this vehicle</label>
+            </div>
+            @Html.ActionLink("Delete", "DeleteCar", "Admin", new { id = Model.CarID }, new { @class = "btn btn-danger", onclick = "return confirm('Are you sure you wish to delete this?');" })
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
+    }
+</div>
+
+<script src="~/JS/Home.js"></script>
+

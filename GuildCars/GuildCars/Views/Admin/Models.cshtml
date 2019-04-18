@@ -1,0 +1,62 @@
+﻿@model GuildCars.ViewModels.ModelVM
+@{
+    ViewBag.Title = "Models";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/AddModels.css" media="screen" />
+
+<h2>Models</h2>
+
+<div id="modelBox">
+    @using (Html.BeginForm("Models", "Admin", FormMethod.Post))
+    {<div id="modelSubmit">
+            <label>New Model</label>
+            @Html.TextBoxFor(m => m.ModelName, new { @class = "form-control" })
+            <div id="makeBox">
+                <label>Make</label>
+                @Html.DropDownListFor(m => m.MakeID, Model.MakesDropDown, "Select Make", new { @class = "form-control" })
+                <div id="saveBox">
+                    <button class="btn btn-primary" type="submit">Save</button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>Models List</h4>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Date Added</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Honda</td>
+                    <td>Civic</td>
+                    <td>01/02/2015</td>
+                    <td>Hank.Hill@PropaneAndPropaneAccessories.com</td>
+
+                </tr>
+
+                @foreach (var carModel in Model.MakeModel)
+                {
+                    <tr>
+                        <td>@carModel.AnonMake</td>
+                        <td>@carModel.AnonModel</td>
+                        <td>@carModel.DateAdded</td>
+                        <td>@carModel.UserId</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+﻿#Container {
+    width:auto;
+    height: 435px;
+    border-style: solid;
+}
+
+img{
+    height: 150px;
+    width: auto;
+}
+
+#carDetails{
+    position: relative;
+    bottom: 100px;
+}
+
+.carText {
+    font-weight: bold;
+}
+
+#carYear {
+    position: relative;
+    
+    font-weight: bold;
+}
+
+#carMake {
+    position: relative;
+    
+    font-weight: bold;
+}
+
+#carModel {
+    position: relative;
+   
+    font-weight: bold;
+}
+
+img {
+    display: block;
+   
+}
+
+#carBodyStyle {
+    position: relative;
+    left: 251px;
+   
+}
+
+#carTrans {
+    position: relative;
+    left: 286px;
+    
+}
+
+#carColor {
+    position: relative;
+    left: 287px;
+    
+}
+
+#carDescription {
+    position: relative;
+    left: 250px; 
+    bottom: 100px;
+    padding-right: 275px;
+    
+}
+
+#carInterior {
+    position: relative;
+    left: 502px;
+    bottom: 60px;
+}
+
+#carMilege {
+    position: relative;
+    left: 500px;
+    bottom: 60px;
+}
+
+#carVin {
+    position: relative;
+    left: 518px;
+    bottom: 60px;
+}
+
+#carPrice {
+    position: relative;
+    left: 775px;
+    bottom: 123px;
+}
+
+#carMSRP {
+    position: relative;
+    left: 801px;
+    bottom: 123px;
+}
+
+a.details {
+    position: relative;
+    top: 100px;
+    left: 930px;
+    border: 0;
+    line-height: 2.5;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: Highlight;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+    a.details:hover {
+        background-color: dodgerblue;
+    }
+
+    a.details:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }

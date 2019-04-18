@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Inventory";
+}
+
+<h2>Inventory Report</h2>
+
+<div id="CarBox">
+
+    <div id="NewBox">
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <label>New Vehicles</label>
+
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Count</th>
+                            <th>Stock Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*@foreach (var make in Model)
+                        {*@
+                        <tr>
+                            <td>2019</td>
+                            <td>Toyota</td>
+                            <td>Camry</td>
+                            <td>1</td>
+                            <td>$24,000</td>
+
+                        </tr>
+                        @*}*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="UsedBox">
+        <div class="row">
+            <div class="col-xs-12">
+                <label>Used Vehicles</label>
+
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Count</th>
+                            <th>Stock Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*@foreach (var make in Model)
+                        {*@
+                        <tr>
+                            <td>2001</td>
+                            <td>Honda</td>
+                            <td>Civic</td>
+                            <td>1</td>
+                            <td>$4000</td>
+
+                        </tr>
+                        @*}*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</div>

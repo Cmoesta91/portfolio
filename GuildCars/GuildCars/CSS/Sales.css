@@ -1,0 +1,146 @@
+﻿#searchBox {
+    width: 1100px;
+    height: 120px;
+    border-style: solid;
+    background-color: white;
+}
+
+
+
+#searchLabel {
+    position: relative;
+    left: 12px;
+}
+
+#bars {
+    position: relative;
+    left: 12px;
+}
+
+#searchBar {
+    width: 200px;
+}
+
+#Price {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+#Year {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+
+#submitButton {
+    position: relative;
+    width: 200px;
+    height: auto;
+    top: 12px;
+    left: 400px;
+}
+
+#carContainer {
+    width: 1150px;
+    height: 200px;
+    border-style: solid;
+}
+
+.carText {
+    font-weight: bold;
+}
+
+#carYear {
+    font-weight: bold;
+    position: relative;
+}
+
+#carMake {
+    font-weight: bold;
+    position: relative;
+}
+
+#carModel {
+    font-weight: bold;
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
+#carBodyStyle {
+    position: relative;
+    left: 300px;
+    bottom: 50px;
+}
+
+#carTrans {
+    position: relative;
+    left: 335px;
+    bottom: 50px;
+}
+
+#carColor {
+    position: relative;
+    left: 336px;
+    bottom: 50px;
+}
+
+#carInterior {
+    position: relative;
+    left: 475px;
+    bottom: 111px;
+}
+
+#carMilege {
+    position: relative;
+    left: 472px;
+    bottom: 111px;
+}
+
+#carVin {
+    position: relative;
+    left: 491px;
+    bottom: 111px;
+}
+
+#carPrice {
+    position: relative;
+    left: 695px;
+    bottom: 171px;
+}
+
+#carMSRP {
+    position: relative;
+    left: 722px;
+    bottom: 171px;
+}
+
+a.purchase {
+    position: relative;
+    left: 930px;
+    bottom: 120px;
+    border: 0;
+    line-height: 2.5;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: Highlight;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+    a.purchase:hover {
+        background-color: dodgerblue;
+    }
+
+    a.purchase:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }

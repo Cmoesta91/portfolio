@@ -1,0 +1,47 @@
+﻿@model GuildCars.ViewModels.SpecialVM
+@{
+    ViewBag.Title = "Specials";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/AddSpecials.css" media="screen" />
+
+<h2>Specials</h2>
+<div id="newSpecialBox">
+    @using (Html.BeginForm("Specials", "Admin", FormMethod.Post))
+    {
+        @Html.ValidationSummary()
+        <div id="newSpecialContent">
+            <div id="Title">
+                <label>Title</label>
+                @Html.TextBoxFor(m => m.Title, new { @class = "form-control", required = "required" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.Title)</span>
+            </div>
+            <div id="Description">
+                <label>Description</label>
+                @Html.TextAreaFor(m => m.Description, new { @class = "form-control", required = "required" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.Description)</span>
+            </div>
+            <div id="saveBox">
+                <button type="submit" class="btn btn-primary">Save</button>
+
+            </div>
+        </div>
+    }
+</div>
+
+<div id="oldSpecialBox">
+    <div class="row" id="">
+        <h2>Specials</h2>
+        @foreach (var special in Model.Specials)
+        {
+            <div id="Container">
+                <img src="~/Images/DollarSign.png" />
+                <span id="Name">@special.SpecialName</span>
+                <br />
+                <div id="Des">@special.SpecialDescription</div>
+                @Html.ActionLink("Delete", "DeleteSpecial", "Admin", new { id = special.SpecialID }, new { @class = "btn btn-danger", onclick = "return confirm('Are you sure you wish to delete this?');" })
+            </div>
+            <br />
+        }
+    </div>
+</div>

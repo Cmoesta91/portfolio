@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Vending Machine</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <header>
+      <h1>Vending Machine</h1>
+    </header>
+  </head>
+
+  <body>
+    <table class="vendingTable" id="" align="center">
+      <tr class="row" id="firstRow">
+        <td class="cell cellButton" id="oneA">
+          <button type="button" class="candyButton" id="cB1" value="1">
+            <span class="candyID" id="candy1"></span><br /><span
+              class="candyName"
+              id="cN1"
+            ></span
+            ><br /><span class="candyPrice" id="cP1"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN1"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="oneB">
+          <button type="button" class="candyButton" id="cB2" value="2">
+            <span class="candyID" id="candy2"></span><br /><span
+              class="candyName"
+              id="cN2"
+            ></span
+            ><br /><span class="candyPrice" id="cP2"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN2"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="oneC">
+          <button type="button" class="candyButton" id="cB3" value="3">
+            <span class="candyID" id="candy3"></span><br /><span
+              class="candyName"
+              id="cN3"
+            ></span
+            ><br /><span class="candyPrice" id="cP3"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN3"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell display" id="oneD">
+          <p id="total">Total $ In</p>
+          <br />
+          <div class="textBox" id="totalBox">&nbsp;</div>
+          <br /><button type="button" class="moneyButton" id="dollar">
+            Add Dollar</button
+          ><br /><button type="button" class="moneyButton" id="quarter">
+            Add Quarter</button
+          ><br /><button type="button" class="moneyButton" id="dime">
+            Add Dime</button
+          ><br /><button type="button" class="moneyButton" id="nickel">
+            Add Nickel
+          </button>
+        </td>
+      </tr>
+      <tr class="row" id="secondRow">
+        <td class="cell cellButton" id="twoA">
+          <button type="button" class="candyButton" id="cB4" value="4">
+            <span class="candyID" id="candy4"></span><br /><span
+              class="candyName"
+              id="cN4"
+            ></span
+            ><br /><span class="candyPrice" id="cP4"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN4"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="twoB">
+          <button type="button" class="candyButton" id="cB5" value="5">
+            <span class="candyID" id="candy5"></span><br /><span
+              class="candyName"
+              id="cN5"
+            ></span
+            ><br /><span class="candyPrice" id="cP5"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN5"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="twoC">
+          <button type="button" class="candyButton" id="cB6" value="6">
+            <span class="candyID" id="candy6"></span><br /><span
+              class="candyName"
+              id="cN6"
+            ></span
+            ><br /><span class="candyPrice" id="cP6"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN6"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell display" id="twoD">
+          <p id="message">Messages</p>
+          <br />
+          <div class="textBox" id="messageBox">&nbsp;</div>
+          <br />
+          <p id="item">Item:</p>
+          <br />
+          <div class="textBox" id="itemBox">&nbsp;</div>
+          <br /><button type="button" class="purchaseButton" id="purchase">
+            Make Purchase
+          </button>
+        </td>
+      </tr>
+      <tr class="row" id="thirdRow">
+        <td class="cell cellButton" id="threeA" id="cB7">
+          <button type="button" class="candyButton" value="7">
+            <span class="candyID" id="candy7"></span><br /><span
+              class="candyName"
+              id="cN7"
+            ></span
+            ><br /><span class="candyPrice" id="cP7"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN7"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="threeB">
+          <button type="button" class="candyButton" id="cB8" value="8">
+            <span class="candyID" id="candy8"></span><br /><span
+              class="candyName"
+              id="cN8"
+            ></span
+            ><br /><span class="candyPrice" id="cP8"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN8"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell cellButton" id="threeC">
+          <button type="button" class="candyButton" id="cB9" value="9">
+            <span class="candyID" id="candy9"></span><br /><span
+              class="candyName"
+              id="cN9"
+            ></span
+            ><br /><span class="candyPrice" id="cP9"></span><br />
+            <div class="candyQuantitiy">
+              Quantity Left: <span id="qN9"></span>
+            </div>
+          </button>
+        </td>
+        <td class="cell display" id="threeD">
+          <p id="change">Change</p>
+          <br />
+          <textarea class="textBox" id="changeBox" rows="4" readonly>
+&nbsp;</textarea
+          >
+          <button type="button" id="changeButton">Change Return</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/home.js"></script>
+</html>

@@ -1,0 +1,40 @@
+﻿#FilterBox {
+    border-style: solid;
+    position: relative;
+    height: 125px;
+    width: auto;
+}
+
+#bars {
+    position: relative;
+    bottom: 20px;
+}
+
+#Filter {
+    position: relative;
+    left: 12px;
+    bottom: 18px;
+}
+
+#UserBar {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#FromBar {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#ToBar {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.btn {
+    position: relative;
+    left: 12px;
+    bottom: 15px;
+    height: auto;
+    width: 300px;
+}

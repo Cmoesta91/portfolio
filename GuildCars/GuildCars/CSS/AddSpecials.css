@@ -1,0 +1,51 @@
+﻿#newSpecialBox {
+    border-style: solid;
+    height: 270px;
+}
+
+#newSpecialContent {
+    position:relative;
+    margin-left: 60px;
+}
+
+#Title {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+#Description {
+    display: block;
+    margin-top: 12px;
+}
+
+#saveBox {
+    display: block;
+    margin-top: 12px;
+}
+
+img {
+    position: relative;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+#Container {
+    border-style: solid;
+    position: relative;
+}
+
+#Name {
+    font-size: xx-large;
+}
+
+#Des {
+    margin-left: 72px;
+    position: relative;
+    bottom: 20px;
+}
+
+.btn-danger {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}

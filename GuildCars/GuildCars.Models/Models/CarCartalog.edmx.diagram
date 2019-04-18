@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ca2c0ac1961d47b48e6de0190932700d" Name="Diagram1">
+        <EntityTypeShape EntityType="GuildCarsModel.Car" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="GuildCarsModel.Customer" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GuildCarsModel.Make" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="GuildCarsModel.Model" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GuildCarsModel.Sale" Width="1.5" PointX="7.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GuildCarsModel.Special" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="GuildCarsModel.FK__Car__ModelID__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="GuildCarsModel.FK__Sale__CarID__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="GuildCarsModel.FK__Sale__CustomerID__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="GuildCarsModel.FK__Model__MakeID__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="GuildCarsModel.FK__Car__MakeID__3F466844" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

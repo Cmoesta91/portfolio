@@ -1,0 +1,38 @@
+﻿@model GuildCars.Models.Models.Car
+@{
+    ViewBag.Title = "Details";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/Inventory.css" media="screen" />
+<h2>Vehicle Details</h2>
+
+<div id="Container">
+    <span id="carYear">@Model.CarYear</span>
+
+    <span id="carMake">@Model.Make.MakeName</span>
+
+    <span id="carModel">@Model.Model.ModelName</span>
+
+    <img src="@Model.PicturePath" alt="carImage" />
+    <div id="carDetails">
+        <span id="carBodyStyle"><span class="carText">Body Style:</span> @Model.BodyStyle</span>
+        <br />
+        <span id="carTrans"><span class="carText">Trans:</span> @Model.Trans</span>
+        <br />
+        <span id="carColor"><span class="carText">Color:</span> @Model.Color</span>
+        <br />
+        <span id="carInterior"><span class="carText">Interior:</span> @Model.Interior</span>
+        <br />
+        <span id="carMilege"><span class="carText">Mileage:</span> @Model.Mileage</span>
+        <br />
+        <span id="carVin"><span class="carText">Vin #:</span> @Model.Vin</span>
+        <br />
+        <span id="carPrice"><span class="carText">Sale Price:</span> @Model.SalePrice</span>
+        <br />
+        <span id="carMSRP"><span class="carText">MSRP:</span> @Model.MSRP</span>
+        <br />
+        <div id="">@Html.ActionLink("Contact Us", "Contact", "Home", new { vin = Model.Vin }, new { @class = "details" })</div>
+        <br />
+        <div id="carDescription"><span class="carText">Description:</span> @Model.CarDescription</div>
+    </div>
+</div>

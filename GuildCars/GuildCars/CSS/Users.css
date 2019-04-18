@@ -1,0 +1,9 @@
+﻿img {
+    height: 200px;
+    width: auto;
+}
+
+.row {
+    position: relative;
+    bottom: 100px;
+}

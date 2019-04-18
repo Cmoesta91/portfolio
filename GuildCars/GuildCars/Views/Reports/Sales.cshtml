@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Sales";
+}
+
+<link rel="stylesheet" type="text/css" href="~/CSS/ReportSales.css" media="screen" />
+
+<h2>Sales Report</h2>
+
+<div id="FilterBox">
+    <div id="Filter">
+    <h3>Filters</h3>
+    </div>
+
+    <div id="bars">
+
+        <div id="UserBar">
+            <label>Users</label>
+            <select>
+                <option selected="selected" >-All-</option>
+            </select>
+        </div>
+
+        <div id="FromBar">
+            <label>From Date</label>
+            <input type="date" />
+        </div>
+
+        <div id="ToBar">
+            <label>To Date</label>
+            <input type="date" />
+        </div>
+
+    </div>
+
+    <div id="SearchButton">
+        <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h4>Search Results</h4>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Total Sales</th>
+                    <th>Total Vehicles</th>
+                </tr>
+            </thead>
+            <tbody>
+                @*@foreach (var make in Model)
+                    {*@
+                <tr>
+                    <td>Hank Hill</td>
+                    <td>$570000</td>
+                    <td>573</td>
+
+                </tr>
+                @*}*@
+            </tbody>
+        </table>
+    </div>
+</div>
+

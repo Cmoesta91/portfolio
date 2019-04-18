@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<style>
+
+#nav {
+  display: inline;
+}
+
+</style>
+
+
+</head>
+<body>
+<a href="home.html"><button>Home</button></a>
+<div id="nav">
+  <a href="Create.html"><button>Create DVD</button></a>
+  
+  <button id="search">Search</button>
+
+  <select id="categoryDD" >
+    <option value="0" disabled selected>Search Category</option>
+    <option value="title">Title</option>
+    <option value="year">Release Year</option>
+    <option value="director">Director Name</option>
+    <option value="rating">Rating</option>
+  </select>
+
+  <input id="searchTerm" placeholder="Search Term" ></input>
+</div>
+
+
+<table class="table" id="displayDVD">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Realease Year</th>
+        <th>Director</th>
+        <th>Rating</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="DvdTable">   
+    </tbody>
+  </table>
+
+
+  <table class="table" id="searchDVD">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Realease Year</th>
+        <th>Director</th>
+        <th>Rating</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="searchDVDTable">   
+    </tbody>
+  </table>
+
+
+  <div id="show-edit-dvd">
+
+    <H2>Edit DVD: <span id="editTitle"></span></H2>
+    <form>
+      <div class="form-group">
+        <input type="hidden" id="edit-dvd-id" />
+      </div>
+
+      Dvd Title: <input id="edit-title-input" />
+      <br>
+      <br>
+      Release Year:
+      <input id="edit-realeaseYear-input"  />
+      <br />
+      <br>
+      Director: <input id="edit-director-input"   />
+      <br />
+      <br>
+      Rating:
+      <select id="edit-rating-input">
+        <option value="" disabled selected>Choose Rating</option>
+        <option value="N/A">N/A</option>
+        <option value="G">G</option>
+        <option value="PG">PG</option>
+        <option value="PG-13">PG-13</option>
+        <option value="R">R</option>
+        <option value="NC-17">NC-17</option>
+      </select>
+      <br />
+      <br>
+      Notes: <textarea id="edit-note-input" maxlength="50" placeholder="Enter Note"></textarea>
+
+    </form>
+
+    <a href="home.html"> <button>Cancel</button> </a>
+      <button id="edit-button">Save Edit</button>
+  </div>
+
+  <div id="viewDVD">
+
+      <H2><span id="viewDVDTitle"></span></H2>
+      <form>
+        <div class="form-group">
+          <input type="hidden" id="viewDVDId" readonly />
+        </div>
+
+        Release Year:
+        <input id="viewDVDRealeaseYear" readonly />
+        <br />
+        <br>
+        Director: <input id="viewDVDDirectort" readonly  />
+        <br />
+        <br>
+        Rating: <input id="viewDVDRating"  readonly />
+        
+        <br />
+        <br>
+        Notes: <textarea id="viewDVDNote" readonly></textarea>
+  
+      </form>
+
+    </div>
+
+  <script src="js/jquery-2.2.4.min.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+fDISPLAY ORDERS
+//A new File is created everyday. We have to check if the file exists 
+
+	I) Query the User for a Date
+		A) If .txt file does not exist.
+			1) Display Error message and return the user to the main menu
+
+		B) Print all of the order information in appropriate format. 
+
+
+ADD AN ORDER
+
+	I) Query the User for each piece of order data necessary: 
+		A) Order Date
+			i) Date must be in future
+		B) Customer Name 
+			i) Field cannot be blank.  Allows [a-z][0-9] periods and commas 
+		C) State 
+			1)must be enter shorthand [MS], [MN], [AZ] 
+			2) If state does not exist in .txt file
+				a) We cannot sell there, display Error message 
+				b)  If state is added later it should show up in the application without a code change
+		D) Product Type 
+			1) available list is shown along with the pricing information. 
+			 	a) newer items added later should show up in the application without a code change
+		E) Area
+			1) Must be positive decimal 
+			2) Minimum order size is 100 square feet
+
+	II) Remaining fields are calculated from the user entry and the tax/product info from the provided .txt files. 
+
+	III) Show summary of order after calculations are complete
+		A) Prompt user for order confirmation [Y/N]
+			1) Yes: Data will be written to the order file with appropriate date. 
+				a) Create new file if it is the first order on the date
+			2) No: Return to main menu
+
+	IV) Generate an order number for User based on the next available order
+		A) Display new OrderNumber 
+			1) "Press enter to return to the Main Menu"
+			2) Console.ReadLine() so User can see OrderNumber
+			3) Return to Main Menu
+
+
+EDIT AN ORDER
+***ONLY CustomerName, State, ProductType, and Area, CAN BE EDITED 
+
+	I)  Query User for Date and OrderNumber. 
+		A) If Order exists
+			1) Display the existing data
+			2) Query User for each piece of order data 
+			3) Replace OLD DATA with the User's NEW DATA
+			4) If User hits enter while leaving a field black OLD DATA remains the SAME
+		B) If change is made
+			1) Order will need to be recalculated. 
+				a) OrderDate may not change
+
+	II) Display summary of EDITED order 
+		A) Prompt user if EDITED order should be saved [Y/N]
+			1) Yes: Replace the data in the file, return to main menu
+			2) No: Return to main menu
+
+
+REMOVE AN ORDER
+	
+	I) Query User for Date and OrderNumber
+		A) If exists 
+			1) Display order information
+			2) Prompt user for confirmation to delete [Y/N]
+				a) Yes: Remove Order from file
+				b) No: Return to Main Menu
+		B) If not
+			1) Return User to Main Menu
+
+
+QUIT
+
+	I) Closes the Application. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
